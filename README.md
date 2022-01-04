@@ -1,5 +1,5 @@
 ## Ceoluso
-Ceoluso is a one page site of app landing page. It's a music app. This site is design with HTML, CSS & Bootstrap. I also usefd some plugins for better animation. This site is fully responsive in all devices.
+Ceoluso is a one page site of app landing page. It's a music app. This site is design with HTML, CSS & Bootstrap. I also used some plugins for better animation. This site is fully responsive in all devices.
 
 ## Demo
 - Live
