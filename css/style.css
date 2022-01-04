@@ -1,0 +1,260 @@
+/*
+	Author: MD Rakibul Hassan Rifat
+
+*/
+
+/*
+  ===========Index==========
+	01) Import Section
+	02) Variable Section
+	03) Global CSS Section
+	04) Header Section
+	05) Hero Section
+	06) About Section
+	07) Templates Section
+	08) Features Section
+	09) Project Section
+	10) Template Section
+	11) Contact Section
+	12) Footer Section
+  ===========================
+*/
+/*==========01) Import Section Start==========*/
+
+
+/*==========01) Import Section End==========*/
+
+/*==========02) Variable Section Start==========*/
+:root{
+	/*=======Color=======*/
+	--bg-color:#0A2345;;
+	--white-color:#ffffff;
+	--span-color:#2A5DA3;
+	--primary-color:#ff3334;
+	--border:#163665;
+	--dark:#000000;
+	--gray:#4f6078;
+
+}
+/*==========02) Variable Section End==========*/
+
+/*==========03) Global Section Start==========*/
+body{
+ background-color:var(--bg-color);
+}
+section{
+	padding: 90px 0;
+}
+h1{
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+}
+h2{
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+h4{
+	font-family: 'Open Sans', sans-serif;
+	color: var(--white-color);
+	line-height: normal;
+	font-size: 18px;
+}
+span{
+	color: var(--span-color);
+}
+p{
+	font-size: 14px;
+	line-height: 2;
+	color: var(--span-color);
+}
+.btn{
+	border: 2px solid var(--border);
+	color: var(--white) !important;
+	padding: 15px 30px;
+	border-radius: 30px;
+	margin-top: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+.btn:hover{
+	background: var(--primary-color);
+	outline: none;
+	box-shadow: none;
+	color: var(--white);
+}
+svg{
+	color: var(--primary-color);
+	font-size: 35px !important;
+}
+.nav_fixed{
+	position: fixed;
+	width: 100%;
+	top: -1px;
+	left: 0;
+	right: 0;
+	background:var(--primary-color);
+	box-shadow: var(--box-shadow);
+	opacity: 0.7;
+	z-index: 999;
+	transition: nav 1s ease;
+	padding: 0 1rem;
+}
+.sec{
+	color: var(--dark) !important;
+}
+.sec:hover{
+	color: var(--white-color) !important;
+}
+/*==========03) Global Section End==========*/
+
+/*==========04) Header Section Start==========*/
+#header .nav{
+	background-color: var(--bg-color) !important;
+}
+#header .navbar-brand img{
+	filter: brightness(0) invert(1);
+	width: 65%;
+}
+#header .navbar-dark .navbar-toggler{
+	border: none;
+	outline: none;
+}
+#header .navbar-toggler span{
+	font-size: 25px;
+}
+#header .nav-item a{
+	font-family:'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color:var(--white-color);
+}
+/*==========04) Header Section End==========*/
+
+/*==========05) Hero Section Start==========*/
+
+/*==========05) Hero Section End==========*/
+
+/*==========06) About Section Start==========*/
+#about{
+	background: url(../img/hero-bg.png)center no-repeat;
+}
+/*==========06) About Section End==========*/
+
+/*==========07) Template Section Start==========*/
+#template{
+	background: url(../img/headphone.png)no-repeat;
+	background-size: 45% 100%;
+	min-height: 430px;
+	width: 100%;
+	overflow: hidden;
+}
+/*==========07) Template Section End==========*/
+
+/*==========08) Features Section Start==========*/
+
+#features .features-body{
+	padding-top: 30px;
+}
+#features .features-body h4{
+	margin: 0;
+}
+/*==========08) Features Section End==========*/
+
+/*==========09) Project Section Start==========*/
+#project{
+	background:url('../img/sample-img.png') no-repeat right;
+	background-size: 50% 100%;
+	width:100%;
+}
+/*==========09) Peoject Section End==========*/
+
+/*==========10) Testimonial Section Start==========*/
+#testimonial{
+	background: url(../img/client-bg.png) center no-repeat;
+	padding-top: 100px;
+	position: relative;
+}
+.testimonial-content{
+		width: 65%;
+		margin: 0 auto;
+		color: #66778e;
+		padding-bottom: 80px;
+}
+.testimonial-content h5 {
+	line-height: 2;
+	width: 80%;
+	margin: 0 auto;
+	color: var(--white);
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 17px;
+}
+.client-info{
+	display: flex;
+	justify-content: center;
+	padding-top: 60px;
+	align-items: center;
+}
+.client-info img{
+	width: 5%;
+	height: 5%;
+}
+.client-info h6{
+	margin: 0;
+	color: var(--gray);
+	align-self: center;
+	padding: 0 10px;
+}
+.carousel-indicators li{
+	height: 12px;
+	width: 12px;
+	background: transparent;
+	border: 2px solid #203960;
+	border-radius: 50px;
+}
+.carousel-indicators .active{
+	background: #335a95;
+	border: 2px solid #335a95;
+}
+/*==========10) Testimonial Section End==========*/
+
+/*==========11) Contact Section Start==========*/
+#features .features-body p,
+#project p,
+#contact .contact-text{
+	color: var(--gray);
+}
+
+/*==========11) Contact Section End==========*/
+#contact, .footer{
+	background:var(--dark);
+}
+#contact .contact-heading{
+		width: 60%;
+		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 45px;
+}
+/*==========12) Footer Section Start==========*/
+.footer .container{
+		border-top: 1px solid var(--gray);
+		border-color: var(--span-color);
+		padding-top: 10px;
+}
+.footer ul{
+	padding-left: 0;
+}
+.footer ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 5px;
+}
+.footer ul li:hover a{
+	text-decoration: none;
+	color: var(--primary-color);
+}
+.footer ul li a{
+	color: var(--span-color);
+}
+.footer .copyright p{
+	color: var(--span-color);
+}
+/*==========12) Footer Section End==========*/
